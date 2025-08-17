@@ -5,12 +5,34 @@
     </head>
     <body>
         <h1>Get Date and Time Progress in JavaScript</h1>
-        Year: <input type="number" id="year" placeholder="Year" /> Month:
-        <input type="number" id="month" placeholder="Month" min="1" max="12" />
+        Year:
+        <input type="number" id="year" placeholder="Year" step="1" /> Month:
+        <input
+            type="number"
+            id="month"
+            placeholder="Month"
+            min="1"
+            max="12"
+            step="1"
+        />
         Day:
-        <input type="number" id="day" placeholder="Day" min="1" max="31" />
+        <input
+            type="number"
+            id="day"
+            placeholder="Day"
+            min="1"
+            max="31"
+            step="1"
+        />
         Hour:
-        <input type="number" id="hour" placeholder="Hour" min="0" max="23" />
+        <input
+            type="number"
+            id="hour"
+            placeholder="Hour"
+            min="0"
+            max="23"
+            step="1"
+        />
         Minute:
         <input
             type="number"
@@ -18,6 +40,7 @@
             placeholder="Minute"
             min="0"
             max="59"
+            step="1"
         />
         Second:
         <input
@@ -26,6 +49,7 @@
             placeholder="Second"
             min="0"
             max="59"
+            step="1"
         />
         Millisecond:
         <input
@@ -34,6 +58,7 @@
             placeholder="Millisecond"
             min="0"
             max="999"
+            step="1"
         />
         <button onclick="calculateDateTimeProgress()">
             Calculate Progress
