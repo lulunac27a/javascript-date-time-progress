@@ -8,6 +8,12 @@ const millisecondInput = document.getElementById("millisecond"); //millisecond i
 const calculateButton = document.getElementById("calculate"); //button to trigger calculation
 calculateButton.addEventListener("click", calculateDateTimeProgress); //event listener for button click
 const resultDiv = document.getElementById("result"); //result output text
+const yearProgressBar = document.getElementById("yearProgress"); //year progress bar
+const monthProgressBar = document.getElementById("monthProgress"); //month progress bar
+const dayProgressBar = document.getElementById("dayProgress"); //day progress bar
+const hourProgressBar = document.getElementById("hourProgress"); //hour progress bar
+const minuteProgressBar = document.getElementById("minuteProgress"); //minute progress bar
+const secondProgressBar = document.getElementById("secondProgress"); //second progress bar
 function calculateDateTimeProgress() {
     const year = parseInt(yearInput.value); //year input value
     const month = parseInt(monthInput.value); //month input value
@@ -56,5 +62,11 @@ function calculateDateTimeProgress() {
     Hour Progress: ${(1 - hourProgress) * 100}%\n
     Minute Progress: ${(1 - minuteProgress) * 100}%\n
     Second Progress: ${(1 - secondProgress) * 100}%
-  `;
+    `;
+    yearProgressBar.value = yearProgress * 100; //update year progress bar
+    monthProgressBar.value = monthProgress * 100; //update month progress bar
+    dayProgressBar.value = dayProgress * 100; //update day progress bar
+    hourProgressBar.value = hourProgress * 100; //update hour progress bar
+    minuteProgressBar.value = minuteProgress * 100; //update minute progress bar
+    secondProgressBar.value = secondProgress * 100; //update second progress bar
 }
