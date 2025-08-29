@@ -6,4 +6,4 @@ This app shows the current progress of year, month, week, day, hour, minute, sec
 
 1. Clone the repository.
 2. Open the index.html file in a browser.
-3. Enjoy!
+3. See the current progress.
