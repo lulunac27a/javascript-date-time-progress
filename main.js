@@ -15,13 +15,13 @@ const hourProgressBar = document.getElementById("hourProgress"); //hour progress
 const minuteProgressBar = document.getElementById("minuteProgress"); //minute progress bar
 const secondProgressBar = document.getElementById("secondProgress"); //second progress bar
 function calculateDateTimeProgress() {
-    const year = parseInt(yearInput.value); //year input value
-    const month = parseInt(monthInput.value); //month input value
-    const day = parseInt(dayInput.value); //day input value
-    const hour = parseInt(hourInput.value); //hour input value
-    const minute = parseInt(minuteInput.value); //minute input value
-    const second = parseInt(secondInput.value); //second input value
-    const millisecond = parseInt(millisecondInput.value); //millisecond input value
+    const year = parseInt(yearInput.value, 10); //year input value
+    const month = parseInt(monthInput.value, 10); //month input value
+    const day = parseInt(dayInput.value, 10); //day input value
+    const hour = parseInt(hourInput.value, 10); //hour input value
+    const minute = parseInt(minuteInput.value, 10); //minute input value
+    const second = parseInt(secondInput.value, 10); //second input value
+    const millisecond = parseInt(millisecondInput.value, 10); //millisecond input value
     const targetDate = new Date(
         Date.UTC(year, month - 1, day, hour, minute, second, millisecond),
     ); //target date in UTC
